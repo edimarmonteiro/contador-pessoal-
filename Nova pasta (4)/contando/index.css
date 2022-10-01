@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+/*>>>>>>>>>>>>>>MENU HAMBÙRGUER<<<<<<<<<<<<<<<<<<<*/
+.menu_hamburgur_class{
+    height: 20px;
+}
+#menu_hamburgur_checkbox{
+    /*Não ocupar nada*/
+    /*Para retirar o quadradinho mostrando que estar checado*/
+    opacity: 0;
+}
+.label_hamburgur{
+    cursor: pointer;
+    position: relative;
+    /*Relativa segundo o tamanho do Label, a qual pertence a class*/
+    height: 22px;
+    width: 30px;
+}
+.menu_hamburgur_class{
+    position: relative;
+    top: 48px;
+}
+.hamb_span01, .hamb_span02, .hamb_span03{
+    position: absolute;
+    /*Organizar em blocos*/
+    display: block;
+    height: 5px;
+    width: 40%;
+    border-radius: 30px;
+    background-color: rgba(27, 73, 73, 0.966);
+    /*transition == animação
+      0.25 == 25sgundos, tempo que ocorrera a animação
+      ease-in-out == Começar rapido e terminar suave*/
+    transition: 0.25 ease-in-out;
+}
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+/*Para ver se o 'input checkedbox' estar funcionando e 
+dar as animaçõs de 'checked'*/
+#menu_hamburgur_checkbox:checked + label span:nth-child(1){
+    /* rotate == Rotação, tipo da transformação
+    -45deg == Virar para a minha direita a 45 graus*/
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#menu_hamburgur_checkbox:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#menu_hamburgur_checkbox:checked + label span:nth-child(3){
+    /*Agora a rotaçõa ocorrera a minha esquerda*/
+    transform: rotate(45deg);
+    top: 8px;
+}
+/*<><><><><>Fazendo o menu funcionar<><><><><><><><><><>*/
+.a_01{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+    
+}
+.a_01:hover{
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+.ul_01{
+    list-style: none;
+}
+.nav_01{
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    left: -450px;
+}
+.ul_01{
+    position: absolute;
+    top: 15px;
+    padding-left: 1px;
+    width: 350px;
+}
+#menu_hamburgur_checkbox:checked ~ .nav_01{
+    transform: translateX(450px);
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<FIM>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+body{
+   background-color:darkslategrey;
+}
+h1{
+    text-align: center;
+}
+.pai_geral{
+    background-color:cadetblue ;
+    margin-top: -450px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.tema_gastos{
+    margin-left: 450px;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+    border-radius: 30px;
+    background-color: darkcyan;
+}
+label{
+    padding-left: 90px;
+    font-size: 19px;
+}
+
+/*ORGANIZANDO OS GASTOS*/
+
+.primeiros_gastos, .ultimos_gastos{
+    display: inline-block;
+}
+
+.dinhero_usuário{
+    background-color: darkcyan;
+    margin-left: 120px;
+    width: 400px;
+    border-radius: 40px;
+    padding-top: 10px;
+    margin-bottom: 9px;
+}
+
+input{
+    width: 70px;
+    border-radius: 30px;
+    margin: none;
+    background-color: darkgray;
+}
+
+.button{
+    margin-left: 650px;
+    margin-top: -190px;
+    width: 150px;
+    font-size: 30px;
+    font-family: Arial;
+}
+.input_button{
+    width: 100px;
+    height: 30px;
+    background-color: darkcyan;
+}
+
+#total_gastos{
+    font-size: 20px;
+    position: relative;
+    left: 850px;
+    top: 120px;
+    background-color: darkcyan;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+#sobra_gastos{
+    font-size: 20px;
+    position: relative;
+    left: 850px;
+    top: 290px;
+    background-color: darkcyan;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+/*<><><><><><><FIM DOS GASTOS<><><><><><*/
+
+/*<><><><><><><><GRAFICO<><><><><><><><><><><<>*/

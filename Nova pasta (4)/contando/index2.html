@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <title>Contador Pessoal</title>
+</head>
+<body>
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+
+    <div>
+        <div class="pai_geral">
+
+            <div class="gastos">
+            <div class="menu_hamburgur_class">
+                <input type="checkbox" name="menu_hamburgur_checkbox" id="menu_hamburgur_checkbox">
+
+                <label class="label_hamburgur" for="menu_hamburgur_checkbox">
+                    <span class="hamb_span01"></span>
+                    <span class="hamb_span02"></span>
+                    <span class="hamb_span03"></span>
+                </label>
+                <nav class="nav_01">
+                    <ul class="ul_01">
+                        <li class="li_01"><a class="a_01" href="">HOME</a></li>
+                        <li class="li_01"><a class="a_01" href="dicas/dicas.html">DICAS PARA ECONOMIZAR</a></li>
+                        <li class="li_01"><a class="a_01" href="">COMENTÁRIOS PARA ECONOMIZAR</a></li>
+                        <li class="li_01"><a class="a_01" href="">ESTUDE ECONOMIA</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+                <h1>Vamos Organizar seus gastos</h1><br><br>
+
+                <!--Resultado final-->
+                <label for="sobra_gastos" id="sobra_gastos">00.00</label>
+                <h2 class="tema_gastos">Valores dos gastos</h2>
+                <label for="total_gastos" id="total_gastos">00.00</label>
+
+                <div class="dinhero_usuário">
+                    <label class="VALOR_dinhero"> VALOR DO DINHERO</label>
+                    <input type="text" value="00" class="" name="valor_total" id="valor_total"><br><br>
+                </div>
+
+                <div class="primeiros_gastos">
+                    <label for="">Internet</label>
+                    <input type="text" value="00" name="internet" id="internet"><br><br>
+
+                    <label for="">Valor Água</label>
+                    <input type="text" class="agua" value="00" name="agua" id="agua"><br><br>
+                
+                    <label for="">Valor Luz</label>
+                    <input type="text" value="00" name="luz" id="luz"><br><br>
+                
+                    <label for=""> Valor gas</label>
+                    <input type="text" value="00" name="gas" id="gas"><br><br>
+
+                    <label>Passeios</label>
+                    <input type="text" value="00" name="passeios" id="passeios"><br><br>
+
+                    <label for=""> Compras</label>
+                    <input type="text" value="00" name="compras" id="compras"><br><br>
+                </div>
+
+                <div class="ultimos_gastos">
+                    <label for=""> Valor Escola</label>
+                    <input type="text" value="00" name="escola" id="escola"><br><br>
+
+                    <label for=""> Outros gastos </label>
+                    <input type="text" value="00" name="outros" id="outros"><br><br>
+
+                    <label> Fatura Cartão </label>
+                    <input type="text" value="00" name="fatura" id="fatura"><br><br>
+
+                    <label for="">Planos de TV</label>
+                    <input type="text" value="00" name="tv" id="tv"><br><br>
+
+                    <label for="">Planos de saude</label>
+                    <input type="text" value="00" name="plano_saude" id="plano_saude"><br><br>
+
+                    <label for="">Planos odontológicos</label>
+                    <input type="text" value="00" name="odontológicos" id="odontológicos"><br><br>
+                    </div>
+
+                    <div class="button">
+                        <input type="button" class="input_button" value="CALCULAR" onclick="calculando()">
+                    </div>
+                    </div>
+            
+        </div>
+    </div>
+</body>
+</html>

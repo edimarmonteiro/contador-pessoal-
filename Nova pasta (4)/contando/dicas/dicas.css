@@ -1,0 +1,88 @@
+body{
+    background-color:darkslategrey;
+}
+.luz_dicas, .agua_dicas, .gas_dica{
+    background-color:cadetblue ;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    padding-bottom: 150px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: double;
+}
+
+h2{
+    text-align: center;
+    width: 300px;
+    /*margin: 15px 45px 15px 135px;*/
+    padding: 15px 15px ;
+    margin-left: 500px;
+    position: relative;
+    top: 40px;
+    text-decoration: underline;
+    background-color: darkcyan;
+    border-radius: 50px;
+    
+}
+
+h3{
+    text-decoration: underline;
+    margin-left: -30px;
+}
+a{
+    position: relative;
+    left: 600px;
+    top: 70px;
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 30px;
+
+}
+.luz_primeiro, .luz_segundo, .luz_terceiro, .luz_quarto, .luz_quinto, .luz_sexto, 
+.luz_setimo, .luz_oitavo, .luz_nono{
+    padding-top: 70px;
+    padding-left: 150px;
+}
+.pq_economizar, .pq_economizar_agua, .pq_economizar_gas{
+    text-align: center;
+    margin-top: 90px;
+    text-decoration: double;
+}
+
+/*Trabalhando com o CSS para aumentar e 
+diminuir o texto*/
+#mais, #mais_agua, #mais_gas{
+    display: none;
+}
+
+#butleimais, #butleimais_agua, #butleimais_gas{
+    position: relative;
+    left: 630px;
+    top: -120px;
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+}
+
+/*<><><><><>AGUA<><><><><><><><><><*/
+
+.agua_primeiro, .agua_segundo, .agua_terceiro, .agua_quarto, .agua_quinto, .agua_sexto,
+.agua_setimo, .agua_oitavo, .agua_nono, .agua_decimo{
+    padding-top: 70px;
+    padding-left: 150px;
+}
+
+/*<><><><><><>GÀS<><><><><><><><><*/
+.gas_primeiro, .gas_segundo, .gas_terceiro,
+.gas_quarto, .gas_quinto, .gas_sexto{
+    padding-top: 70px;
+    padding-left: 150px;
+}

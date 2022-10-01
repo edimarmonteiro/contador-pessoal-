@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <title>Contador Pessoal</title>
+</head>
+<body>
+    <div class="fundo">
+        
+        <div class="pai_de_todos">
+            <section clas="section_01">
+                <h1 class="title_principal">Contador Pessoal</h1>
+            </section>
+            <form class="login">
+                <h2>Seu Cadastro</h2>
+                <label for="nome_usuario">Nome</label>
+                <input type="text" name="nome_usuario" id="nome_usuario" required
+                placeholder="Nome do seu agrado"><br><br>
+
+                <label for="email_usuario">Email</label>
+                <input type="email" name="email_usuario" id="email_usuario" required
+                placeholder="Para recebr informações" minlength="5"><br><br>
+
+                <label for="senha_usuario">Senha</label>
+                <input type="password" name="senha_usuario" id="senha_usuario" required
+                placeholder="Crie uma senha forte" minlength="8" maxlength="12"><br><br>
+                <label for="senha_usuario_conf">Confirmr sua senha</label>
+                <input type="password" name="senha_usuario_conf" id="senha_usuario_conf" required
+                placeholder="Confirme a senha">
+            </form>
+            <input type="button" onclick="confirmar()" value="Confirmar" name="finalizar_cadastro" id="finalizar_cadastro">
+        </div>
+    </div>
+</body>
+</html>
